@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Finder</title>
+    <meta name="codelab" content="your-first-pwa-v3">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+    <!-- CODELAB: Add link rel manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- CODELAB: Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Parking Finder">
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+
+    <!-- CODELAB: Add description here -->
+    <meta name="description" content="This is a weather application that uses data from Dark Sky">
+
+    <!-- CODELAB: Add meta theme-color -->
+    <meta name="theme-color" content="#2F3BA2" />
+
+    <!--- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/styles/inline.css">
+
+</head>
+
+
+<button id="butInstall" aria-label="Install" hidden></button>
+
+<body>
+
+    <!--- sidebar menu -->
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()"> <span></span> <span></span> <span></span> </div>
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="parking.html">
+                <li>Parking Map</li>
+            </a>
+            <a href="profile.html">
+                <li>Profile</li>
+            </a>
+            <a href="login.html">
+                <li>Login</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </div>
+
+    <!--- main content-->
+
+
+    <div id="app">
+        <header class="hero">
+
+        </header>
+        <main>
+            <section class="article-title">
+                <h1>About Us</h1>
+            </section>
+            <article class="article-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+        </main>
+    </div>
+
+
+
+
+
+
+    <footer class="footer text-center ">
+        <p>&copy; Daniel Weiss Pedersen</p>
+    </footer>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<!--- scripts -->
+<script src="sidebar.js"></script>
+<script src="/scripts/luxon-1.11.4.js"></script>
+<script src="/scripts/app.js"></script>
+<!-- CODELAB: Add the install script here -->
+<script src="/scripts/install.js"></script>
+<script>
+    // CODELAB: Register service worker.
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    }
+
+                );
+            }
+
+        );
+    }
+</script>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/styles/inline.css">
+
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <body class="profile-page">
+        <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg " color-on-scroll="100"
+            id="sectionsNav">
+            <div class="container">
+                <div class="navbar-translate">
+                    <!--- sidebar menu -->
+                    <div id="sidebar">
+                        <div class="toggle-btn white" onclick="toggleSidebar()"><span></span> <span></span>
+                            <span></span> </div>
+                        <ul>
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="about.html">
+                                <li>About</li>
+                            </a>
+                            <a href="parking.html">
+                                <li>Parking Map</li>
+                            </a>
+                            <a href="profile.html">
+                                <li>Profile</li>
+                            </a>
+                            <a href="login.html">
+                                <li>Login</li>
+                            </a>
+                            <a href="contact.html">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="dropdown nav-item">
+
+        </nav>
+
+        <div class="profile-page page-header" data-parallax="true"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="profile">
+                        <div class="avatar">
+                            <img src="/images/person.png" alt="Circle Image"
+                                class="img-raised rounded-circle img-fluid">
+                        </div>
+                        <div class="name">
+                            <h3 class="title">John Doe</h3>
+                            <h6>Student</h6>
+
+                            <div class="description text-center">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sit assumenda
+                                    dignissimos eos, expedita, aut cum perferendis iure corrupti eveniet doloremque? Et
+                                    minima temporibus praesentium pariatur natus maxime sequi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="studio">
+                    <div class="row">
+                        <div class="col-md-3 ml-auto">
+                            <img src="/images/profile_illustration1.png" class="rounded">
+                            <img src="/images/profile_illustration2.png" class="rounded">
+                        </div>
+                        <div class="col-md-3 mr-auto">
+                            <img src="/images/profile_illustration3.jpg" class="rounded">
+                        </div>
+
+                        <!-- comments -->
+                        <div class="container">
+                            <div class="row">
+                                <h2 class="comment-header">Comment Below</h2>
+                                <div class="">
+                                    <div class="one-post">
+                                        <!--Post Description-->
+                                        <div class="bd-radius">
+                                            <div class="post-post-content postMetaInline-media" style="">
+                                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 pd">
+                                                    <div class="media">
+                                                        <div class="media-left">
+                                                            <a href="#">
+                                                                <img src="/images/person.png" class="media-object"
+                                                                    alt="Sample Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h4 class="media-heading mg mg-t-5">
+                                                                <span class="comment-user">John Doe</span>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pd">
+                                                        <ul class="nav list-unstyled">
+                                                            <li>
+                                                                <div class="timed text-muted">20 min ago</div>
+                                                            </li>
+                                                            <li>
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <p class="text-justify">
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Pariatur repellendus dicta ipsa odio. Facilis, voluptatibus
+                                                    fugit magnam quod doloremque quaerat doloribus dolorem atque quo
+                                                    esse ut culpa minima similique! Numquam.
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Pariatur repellendus dicta ipsa odio. Facilis, voluptatibus
+                                                    fugit magnam quod doloremque quaerat doloribus dolorem atque quo
+                                                    esse ut culpa minima similique! Numquam.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info" id="btn-comment">Post</button>
+                                    </div>
+
+                                    <footer class="footer text-center ">
+                                        <p>&copy; Daniel Weiss Pedersen</p>
+                                    </footer>
+
+                                    <!--- scripts -->
+                                    <script src="sidebar.js"></script>
+                                    <script src="/scripts/luxon-1.11.4.js"></script>
+                                    <script src="/scripts/app.js"></script>
+                                    <!-- CODELAB: Add the install script here -->
+                                    <script src="/scripts/install.js"></script>
+                                    <script>
+                                        // CODELAB: Register service worker.
+
+                                        if ('serviceWorker' in navigator) {
+                                            window.addEventListener('load', () => {
+                                                    navigator.serviceWorker.register('/service-worker.js')
+                                                        .then(
+                                                            (reg) => {
+                                                                console.log('Service worker registered.',
+                                                                    reg);
+                                                            }
+
+                                                        );
+                                                }
+
+                                            );
+                                        }
+                                    </script>
+
+    </body>
+</body>
+
+</html>

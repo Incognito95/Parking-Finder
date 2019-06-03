@@ -214,7 +214,7 @@ function updateData() {
     // CODELAB: Add code to call getForecastFromCache
     getForecastFromCache(location.geo)
     .then((forecast) => {
-      Forecast(card, forecast);
+      renderForecast(card, forecast);
     });
 
     // Get the forecast data from the network.

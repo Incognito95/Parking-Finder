@@ -27,5 +27,8 @@
     "progressive-web-app",
     "pwa",
     "installable web app"
-  ]
+  ],
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2"
+  }
 }
