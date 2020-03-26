@@ -1,6 +1,6 @@
 # Parking Finder
 ![Home](/public/images/home.png)
-![About](/public/images/about.png)
+<br>![About](/public/images/about.png)
 ![Profile](/public/images/profile.png)
 ![Map](/public/images/map.png)
 ![Login](/public/images/login.png)
